@@ -9,10 +9,10 @@ app.use(routes);
 
 
 
+const porta = process.env.PORT;
 
-
-app.listen(process.env.PORT || 3333, () => {
-
+app.listen(porta || 3333, () => {
+    console.log(porta);
     console.log('Servidor no ar !');
 
 })
